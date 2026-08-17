@@ -1,0 +1,65 @@
+# Project TODO
+
+- [x] Implement CSV drag-and-drop and browse upload for IMDb review datasets
+- [x] Validate required `review` and `sentiment` CSV columns
+- [x] Implement Python/NLTK VADER server-side review analysis
+- [x] Classify every review as positive, negative, or neutral
+- [x] Expose analysis results through the web application API
+- [x] Build results dashboard with total reviews, accuracy, macro F1, and label counts
+- [x] Add interactive predicted sentiment distribution bar chart
+- [x] Add browser-rendered confusion matrix visualization
+- [x] Add paginated and searchable review table
+- [x] Display review text, actual label, compound score, and predicted label columns
+- [x] Add instant single-review VADER analyzer without page reload
+- [x] Add full classified-results CSV export
+- [x] Apply polished cream editorial visual system with Didone-style typography, fine rules, and generous spacing
+- [x] Add responsive and accessible states for upload, analysis, empty, loading, and error flows
+- [x] Add Vitest coverage for sentiment thresholds, CSV validation, and API behavior
+- [x] Run type checks, tests, and browser visual verification
+- [x] Save final project checkpoint
+
+- [x] Implement live debounced single-review prediction and visible single-review error handling
+- [x] Add explicit CSV analysis loading state and accessible status messaging
+- [x] Add Vitest coverage for neutral classification, CSV validation, and CSV analysis API behavior
+- [x] Successfully capture and review the browser preview after the UI stabilizes
+- [x] Reconfirm all TODO items and save the final project checkpoint
+- [x] Add an explicit accessible live status region for CSV analysis progress, completion, and errors
+
+- [x] Add persistent analysis history database table with dataset metadata and summary metrics
+- [x] Add history database helpers and API procedures for list, save, detail, and comparison
+- [x] Save each completed CSV analysis to persistent history
+- [x] Build history section with prior evaluation cards and detail access
+- [x] Add comparison view for selected historical analyses
+- [x] Add loading, empty, error, and accessible states for analysis history
+- [x] Add Vitest coverage for history persistence and API behavior
+- [x] Verify history flows in the browser and save an updated checkpoint
+- [x] Add dedicated history comparison API procedure or helper
+- [x] Add usable history detail action that calls the detail procedure
+- [x] Add tests proving CSV analysis persistence and history detail retrieval
+- [x] Verify the history archive and empty-state rendering in the browser preview
+- [x] Save a new checkpoint after the history follow-up validation
+
+- [x] Add the provided movie-poster collage as a fixed full-screen background asset
+- [x] Add a responsive dark overlay/gradient while preserving existing UI and functionality
+- [x] Verify desktop, tablet, and mobile background positioning and foreground contrast
+- [x] Save an updated checkpoint after visual verification
+
+- [x] Redesign the site from cream/beige to a near-black cinematic palette with warm white text, muted grey secondary text, and cinematic red accents
+- [x] Darken and desaturate the supplied movie collage background while keeping posters recognizable and using a black-to-transparent gradient
+- [x] Restyle transparent navigation with cinematic contrast and responsive mobile behavior
+- [x] Replace the hero messaging with AI × CINEMA × SENTIMENT and the emotional-signal headline, supporting copy, and taglines
+- [x] Add prominent Analyze Reviews and Explore How It Works CTA treatments without breaking current flows
+- [x] Redesign the CSV upload section as a dark translucent glass-like dropzone with hover accents
+- [x] Add a three-step product explanation section: Upload, Analyze, Understand
+- [x] Add a sentiment preview section with positive, neutral, and negative bars and placeholder UI values
+- [x] Restyle existing results, history, comparison, table, analyzer, and export surfaces to match the dark cinematic system
+- [x] Add subtle grain, gradients, fade-in motion, hover transitions, and restrained red glow effects
+- [x] Verify accessibility, responsive layouts, existing functionality, tests, and production build after the redesign
+- [x] Save a new redesign checkpoint
+- [x] Add subtle entrance/fade-in motion to the redesigned sections with prefers-reduced-motion support
+- [x] Perform and document a post-redesign accessibility verification pass for the cinematic UI
+- [x] Save a fresh checkpoint after the redesign changes are finalized and verified
+- [x] Save the post-motion, post-accessibility cinematic redesign checkpoint
+- [x] Correct the hero headline edit so it reads “Turn voices into one clear emotional signal” with clean lighter typography and no empty eyebrow element
+- [x] Re-verify the corrected hero render and save a fresh checkpoint
+- [x] Save a fresh checkpoint after the corrected hero headline verification
