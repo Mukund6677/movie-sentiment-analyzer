@@ -7,6 +7,7 @@ WORKDIR /app
 COPY . .
 
 RUN python3 -m pip install --break-system-packages --no-cache-dir -r requirements.txt \
+  && python3 -c "import nltk; nltk.download('vader_lexicon', quiet=True)" \
   && npm install -g corepack@latest \
   && corepack pnpm install \
   && corepack pnpm run build

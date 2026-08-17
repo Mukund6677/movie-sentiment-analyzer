@@ -4,11 +4,15 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { spawn } from "node:child_process";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { createAnalysisHistory, getAnalysisHistory, getAnalysisHistoryById } from "./db";
 
 function runPython(args: string[], input: string): Promise<unknown> {
   return new Promise((resolve, reject) => {
-    const child = spawn("python3", ["scripts/analyze_reviews.py", ...args], { cwd: process.cwd() });
+    const projectPython = path.join(process.cwd(), ".venv", process.platform === "win32" ? "Scripts/python.exe" : "bin/python");
+    const python = process.env.PYTHON_BIN || (existsSync(projectPython) ? projectPython : "python3");
+    const child = spawn(python, ["scripts/analyze_reviews.py", ...args], { cwd: process.cwd() });
     let stdout = "";
     let stderr = "";
     child.stdout.on("data", chunk => { stdout += chunk.toString(); });
